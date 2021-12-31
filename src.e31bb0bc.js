@@ -2815,6 +2815,8 @@ function onSearchInput(e) {
 function lengthCheck(r) {
   if (r.length > 10) {
     _notiflix.default.Notify.info("Too many matches found. Please enter a more specific name.");
+
+    clearArea();
   } else {
     listMarkup(r);
   }
@@ -2874,7 +2876,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61609" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
